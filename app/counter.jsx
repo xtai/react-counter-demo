@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux'
 import { createStore } from 'redux';
 
 const counter = (state = 5, action) => {
@@ -15,8 +14,8 @@ const counter = (state = 5, action) => {
 }
 
 const store = createStore(counter);
-s = store;
-console.log(store);
+// s = store;
+// console.log(store);
 
 const Counter = ({ value, onIncrease, onDecrease }) => (
   <div className="text-center">
